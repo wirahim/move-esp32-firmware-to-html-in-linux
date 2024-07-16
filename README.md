@@ -1,5 +1,5 @@
 # move-esp32-firmware-to-html-in-linux
-use this file to move all "*.bin" (firmware) files from the current folder to the "/var/www/html/" folder.
+Use this script to move all "*.bin" (firmware) files from the current folder to the "/var/www/html/" folder.
 
 The following script is generated using Chat GPT. Use at your own risk.
 
@@ -26,7 +26,7 @@ find "$SOURCE_DIR" -name "*.bin" -exec mv {} "$DEST_DIR" \;
 echo "All .bin files have been moved to $DEST_DIR"
 ```
 
-## 2. Create a file named 'move_bin_files.sh'
+## 2. Create a file named 'move_bin_files.sh'. Paste the above script 'ctrl+v'
 ```bash
 sudo nano move_bin_files.sh
 ```
