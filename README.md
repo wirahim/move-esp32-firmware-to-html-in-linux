@@ -21,7 +21,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Find and move .bin files
-find "$SOURCE_DIR" -name "*.bin" -exec mv {} "$DEST_DIR" \;
+find "$SOURCE_DIR" -maxdepth 1 -type f -name "*.bin" -exec mv {} "$DEST_DIR" \;
 
 echo "All .bin files have been moved to $DEST_DIR"
 ```
